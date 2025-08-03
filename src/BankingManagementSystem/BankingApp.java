@@ -16,6 +16,7 @@ public class BankingApp {
         }
         try{
             Connection connection = DriverManager.getConnection(url, username, password);
+
             Scanner scanner =  new Scanner(System.in);
             User user = new User(connection, scanner);
             Accounts accounts = new Accounts(connection, scanner);
