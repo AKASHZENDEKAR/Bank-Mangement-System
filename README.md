@@ -74,24 +74,7 @@ Bank-Mangement-System/
 Run the following commands in MySQL:
 
 ```sql
-CREATE DATABASE bank_management;
-USE bank_management;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100),
-    email VARCHAR(100) UNIQUE,
-    password VARCHAR(50),
-    balance DOUBLE DEFAULT 0
-);
-
-🔌 JDBC Configuration
-
-Update database credentials in your Java JDBC utility file:
-
-String url = "jdbc:mysql://localhost:3306/bank_management";
-String user = "root";
-String password = "your_password";
+C
 
 
 ## 📂 Project Structure
